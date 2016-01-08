@@ -1,0 +1,12 @@
+[Unit]
+Description=picard api.py
+
+[Service]
+Type=oneshot
+WorkingDirectory=/souvik.me/website/projects/picard/server/picard/api
+Environment=PICARD_PREFIX="/picard/api/"
+Environment=PICARD_PORT=8991
+ExecStart=/usr/bin/python3 /souvik.me/website/projects/picard/server/picard/api/api.py
+
+[Install]
+WantedBy=multi-user.target

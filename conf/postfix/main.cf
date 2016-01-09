@@ -681,3 +681,8 @@ readme_directory = /usr/share/doc/postfix-2.10.1/README_FILES
 smtpd_tls_cert_file = /souvik.me/ssl/souvik_me.crt
 smtpd_tls_key_file = /souvik.me/ssl/souvik_me.key
 smtpd_use_tls = yes
+
+milter_protocol = 2
+milter_default_action = accept
+smtpd_milters = inet:localhost:8891
+non_smtpd_milters = inet:localhost:8891

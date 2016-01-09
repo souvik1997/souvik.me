@@ -697,3 +697,4 @@ smtpd_recipient_restrictions = permit_mynetworks, permit_sasl_authenticated, rej
 smtpd_sender_restrictions = reject_unauth_destination
 
 mailbox_transport = lmtp:unix:private/dovecot-lmtp
+smtpd_tls_auth_only = yes

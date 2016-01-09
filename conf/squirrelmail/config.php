@@ -25,7 +25,7 @@ $motd = "";
 
 $squirrelmail_default_language = 'en_US';
 
-$domain                 = 'localhost';
+$domain                 = 'centos7.souvik.me';
 $imapServerAddress      = 'localhost';
 $imapPort               = 143;
 $useSendmail            = true;

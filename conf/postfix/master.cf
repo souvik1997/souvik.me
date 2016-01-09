@@ -9,6 +9,7 @@
 #               (yes)   (yes)   (yes)   (never) (100)
 # ==========================================================================
 smtp      inet  n       -       n       -       -       smtpd
+  -o content_filter=spamassassin
 #smtp      inet  n       -       n       -       1       postscreen
 #smtpd     pass  -       -       n       -       -       smtpd
 #dnsblog   unix  -       -       n       -       0       dnsblog
@@ -23,6 +24,7 @@ submission inet n       -       n       -       -       smtpd
   -o smtpd_sender_restrictions=$mua_sender_restrictions
   -o smtpd_recipient_restrictions=permit_sasl_authenticated,reject
   -o milter_macro_daemon_name=ORIGINATING
+  -o content_filter=spamassassin
 smtps     inet  n       -       n       -       -       smtpd
   -o syslog_name=postfix/smtps
   -o smtpd_tls_wrappermode=yes
@@ -33,6 +35,7 @@ smtps     inet  n       -       n       -       -       smtpd
   -o smtpd_sender_restrictions=$mua_sender_restrictions
   -o smtpd_recipient_restrictions=permit_sasl_authenticated,reject
   -o milter_macro_daemon_name=ORIGINATING
+  -o content_filter=spamassassin
 #628       inet  n       -       n       -       -       qmqpd
 pickup    unix  n       -       n       60      1       pickup
 cleanup   unix  n       -       n       -       0       cleanup
@@ -125,3 +128,10 @@ scache    unix  -       -       n       -       1       scache
 #mailman   unix  -       n       n       -       -       pipe
 #  flags=FR user=list argv=/usr/lib/mailman/bin/postfix-to-mailman.py
 #  ${nexthop} ${user}
+spamassassin
+     unix  -       n       n       -       -       pipe
+     flags=R
+     user=nobody
+     argv=/usr/bin/spamc 
+     -e /usr/sbin/sendmail 
+     -oi -f ${sender} ${recipient}

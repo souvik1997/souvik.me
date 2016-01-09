@@ -81,6 +81,7 @@ myhostname = centos7.souvik.me
 # parameters.
 #
 #mydomain = domain.tld
+mydomain = souvik.me
 
 # SENDING MAIL
 # 

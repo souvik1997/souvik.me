@@ -686,3 +686,10 @@ milter_protocol = 2
 milter_default_action = accept
 smtpd_milters = inet:localhost:8891 inet:localhost:8893
 non_smtpd_milters = $smtpd_milters
+
+smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+smtpd_sasl_auth_enable = yes
+smtpd_relay_restrictions = permit_mynetworks, permit_sasl_authenticated, reject_unauth_destination
+
+mailbox_transport = lmtp:unix:private/dovecot-lmtp

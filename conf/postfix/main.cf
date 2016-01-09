@@ -73,7 +73,7 @@ mail_owner = postfix
 # other configuration parameters.
 #
 #myhostname = host.domain.tld
-#myhostname = virtual.domain.tld
+myhostname = centos7.souvik.me
 
 # The mydomain parameter specifies the local internet domain name.
 # The default is to use $myhostname minus the first component.
@@ -113,7 +113,7 @@ mail_owner = postfix
 #inet_interfaces = all
 #inet_interfaces = $myhostname
 #inet_interfaces = $myhostname, localhost
-inet_interfaces = localhost
+inet_interfaces = all
 
 # Enable IPv4, and IPv6 if supported
 inet_protocols = all

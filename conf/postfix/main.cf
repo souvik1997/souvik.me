@@ -677,3 +677,7 @@ sample_directory = /usr/share/doc/postfix-2.10.1/samples
 # readme_directory: The location of the Postfix README files.
 #
 readme_directory = /usr/share/doc/postfix-2.10.1/README_FILES
+
+smtpd_tls_cert_file = /souvik.me/ssl/souvik_me.crt
+smtpd_tls_key_file = /souvik.me/ssl/souvik_me.key
+smtpd_use_tls = yes

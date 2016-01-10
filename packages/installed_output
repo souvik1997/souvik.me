@@ -29,6 +29,7 @@ ruby-devel
 spamassassin
 spawn-fcgi
 squirrelmail
+symlinks
 systemd-devel
 yum-utils
 epel-release

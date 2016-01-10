@@ -1,3 +1,6 @@
 [submodule "website"]
 	path = website
 	url = https://github.com/souvik1997/website
+[submodule "extra/fcgiwrap"]
+	path = extra/fcgiwrap
+	url = https://github.com/gnosek/fcgiwrap

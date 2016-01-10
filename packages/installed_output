@@ -1,0 +1,48 @@
+----yum packages----
+ant
+cgit
+cloud-init
+emacs
+fail2ban
+fcgi-devel
+git
+highlight
+htop
+inkscape
+lsof
+mailx
+nano
+wget
+nginx
+nmap
+npm
+opendkim
+opendmarc
+php-fpm
+php-pear-MDB2-Driver-mysqli
+postfix
+dovecot
+python34
+rsync
+wget
+ruby-devel
+spamassassin
+spawn-fcgi
+squirrelmail
+systemd-devel
+yum-utils
+epel-release
+----end yum packages----
+----pip3 packages----
+bottle==0.12.9
+wheel==0.26.0
+Note: pipdeptree also installed under pip3
+----end pip3 packages----
+----gem packages----
+jekyll
+redcarpet
+----end gem packages----
+----npm packages----
+grunt-cli
+bower
+----end npm packages----

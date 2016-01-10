@@ -21,8 +21,8 @@ rm -rf /etc/squirrelmail
 ln -sfv /souvik.me/conf/squirrelmail /etc/
 chown -R root:apache /etc/squirrelmail/*.php
 rm /etc/sysconfig/spamassassin
-ln -sfv /souvik.me/conf/spamassassin /etc/sysconfig
+ln -sfv /souvik.me/conf/sysconfig/spamassassin /etc/sysconfig
 rm /etc/sysconfig/spawn-fcgi
-ln -sfv /souvik.me/conf/spawn-fcgi /etc/sysconfig
+ln -sfv /souvik.me/conf/sysconfig/spawn-fcgi /etc/sysconfig
 rm /etc/systemd/system/picard.service
 cp /souvik.me/conf/systemd/system/picard.service /etc/systemd/system/

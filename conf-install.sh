@@ -2,7 +2,7 @@
 rm /etc/cgitrc
 ln -sfv /souvik.me/conf/cgitrc /etc/
 rm -rf /etc/dovecot
-ln -sfv /souvik.me/conf/cgitrc /etc/
+ln -sfv /souvik.me/conf/dovecot /etc/
 rm -rf /etc/fail2ban
 ln -sfv /souvik.me/conf/fail2ban /etc/
 rm -rf /etc/nginx

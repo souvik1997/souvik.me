@@ -57,8 +57,11 @@ mimetype.png=image/png
 mimetype.svg=image/svg+xml
 
 # Enable syntax highlighting (requires the highlight package)
-#source-filter=/usr/libexec/cgit/filters/syntax-highlighting.sh
-
+source-filter=/usr/libexec/cgit/filters/syntax-highlighting.sh
+virtual-root=/cgit/
+strict-export=git-daemon-export-ok
+scan-path=/var/lib/git/
+head-include=/souvik.me/extra/cgit/cgit-head.html
 ##
 ## List of repositories.
 ## PS: Any repositories listed when section is unset will not be

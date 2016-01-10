@@ -7,3 +7,9 @@
 #SOCKET=/var/run/php-fcgi.sock
 #OPTIONS="-u apache -g apache -s $SOCKET -S -M 0600 -C 32 -F 1 -P /var/run/spawn-fcgi.pid -- /usr/bin/php-cgi"
 
+FCGI_SOCKET=/run/fcgiwrap.sock
+FCGI_PROGRAM=/usr/local/sbin/fcgiwrap
+FCGI_USER=nobody
+FCGI_GROUP=nginx
+FCGI_EXTRA_OPTIONS="-M 0770"
+OPTIONS="-u $FCGI_USER -g $FCGI_GROUP -s $FCGI_SOCKET -S $FCGI_EXTRA_OPTIONS -F 1 -P /var/run/spawn-fcgi.pid -- $FCGI_PROGRAM"

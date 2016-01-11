@@ -28,3 +28,5 @@ rm /etc/systemd/system/picard.service
 cp /souvik.me/conf/systemd/system/picard.service /etc/systemd/system/
 rm -rf /etc/firewalld
 ln -sfv /souvik.me/conf/firewalld /etc
+rm -rf /etc/openvpn
+ln -sfv /souvik.me/conf/openvpn /etc/

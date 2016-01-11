@@ -38,3 +38,5 @@ rm -rf /etc/php-fpm.d
 ln -sfv /souvik.me/conf/php-fpm.d /etc/
 rm -rf /etc/systemd
 ln -sfv /souvik.me/conf/systemd /etc/
+rm -rf /etc/named*
+ln -sfv /souvik.me/conf/named* /etc/

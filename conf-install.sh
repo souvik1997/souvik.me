@@ -24,8 +24,6 @@ rm /etc/sysconfig/spamassassin
 ln -sfv /souvik.me/conf/sysconfig/spamassassin /etc/sysconfig
 rm /etc/sysconfig/spawn-fcgi
 ln -sfv /souvik.me/conf/sysconfig/spawn-fcgi /etc/sysconfig
-rm /etc/systemd/system/picard.service
-cp /souvik.me/conf/systemd/system/picard.service /etc/systemd/system/
 rm -rf /etc/firewalld
 ln -sfv /souvik.me/conf/firewalld /etc/
 rm -rf /etc/openvpn
@@ -38,3 +36,5 @@ rm /etc/php-fpm.conf
 ln -sfv /souvik.me/conf/php-fpm.conf /etc/
 rm -rf /etc/php-fpm.d
 ln -sfv /souvik.me/conf/php-fpm.d /etc/
+rm -rf /etc/systemd
+ln -sfv /souvik.me/conf/systemd /etc/

@@ -43,8 +43,8 @@ opendkim
 opendmarc
 ----end yum packages----
 ----pip3 packages----
-wheel==0.26.0
 bottle==0.12.9
+wheel==0.26.0
 Note: pipdeptree also installed under pip3
 ----end pip3 packages----
 ----gem packages----

@@ -27,6 +27,8 @@ ln -sfv /souvik.me/conf/sysconfig/spawn-fcgi /etc/sysconfig
 rm /etc/systemd/system/picard.service
 cp /souvik.me/conf/systemd/system/picard.service /etc/systemd/system/
 rm -rf /etc/firewalld
-ln -sfv /souvik.me/conf/firewalld /etc
+ln -sfv /souvik.me/conf/firewalld /etc/
 rm -rf /etc/openvpn
 ln -sfv /souvik.me/conf/openvpn /etc/
+rm /etc/sysctl.d/10-sysctl.conf
+ln -sfv /souvik.me/conf/sysctl.d/10-sysctl.conf /etc/sysctl.d/

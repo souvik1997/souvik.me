@@ -2,3 +2,5 @@ git/*
 !git
 secure
 piwik/
+*status*log
+ipp.txt

@@ -36,7 +36,7 @@ export KEY_CONFIG=`$EASY_RSA/whichopensslcnf $EASY_RSA`
 # a rm -rf on this directory
 # so make sure you define
 # it correctly!
-export KEY_DIR="$EASY_RSA/keys"
+export KEY_DIR="/souvik.me/ssl/openvpn/"
 
 # Issue rm -rf warning
 echo NOTE: If you run ./clean-all, I will be doing a rm -rf on $KEY_DIR
@@ -62,14 +62,14 @@ export KEY_EXPIRE=3650
 # which will be placed in the certificate.
 # Don't leave any of these fields blank.
 export KEY_COUNTRY="US"
-export KEY_PROVINCE="CA"
-export KEY_CITY="SanFrancisco"
-export KEY_ORG="Fort-Funston"
-export KEY_EMAIL="me@myhost.mydomain"
+export KEY_PROVINCE="NY"
+export KEY_CITY="New York"
+export KEY_ORG="Org"
+export KEY_EMAIL="souvik@centos7.souvik.me"
 export KEY_OU="MyOrganizationalUnit"
 
 # X509 Subject Field
-export KEY_NAME="EasyRSA"
+export KEY_NAME="server"
 
 # PKCS11 Smart Card
 # export PKCS11_MODULE_PATH="/usr/lib/changeme.so"
@@ -77,4 +77,4 @@ export KEY_NAME="EasyRSA"
 
 # If you'd like to sign all keys with the same Common Name, uncomment the KEY_CN export below
 # You will also need to make sure your OpenVPN server config has the duplicate-cn option set
-# export KEY_CN="CommonName"
+# export KEY_CN="centos7.souvik.me"

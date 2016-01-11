@@ -32,3 +32,5 @@ rm -rf /etc/openvpn
 ln -sfv /souvik.me/conf/openvpn /etc/
 rm /etc/sysctl.d/10-sysctl.conf
 ln -sfv /souvik.me/conf/sysctl.d/10-sysctl.conf /etc/sysctl.d/
+rm /etc/sslh.cfg
+ln -sfv /souvik.me/conf/sslh.cfg /etc/

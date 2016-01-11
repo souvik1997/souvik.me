@@ -34,3 +34,7 @@ rm /etc/sysctl.d/10-sysctl.conf
 ln -sfv /souvik.me/conf/sysctl.d/10-sysctl.conf /etc/sysctl.d/
 rm /etc/sslh.cfg
 ln -sfv /souvik.me/conf/sslh.cfg /etc/
+rm /etc/php-fpm.conf
+ln -sfv /souvik.me/conf/php-fpm.conf /etc/
+rm -rf /etc/php-fpm.d
+ln -sfv /souvik.me/conf/php-fpm.d /etc/

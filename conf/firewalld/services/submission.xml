@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>Enable SMTP submission</short>
+  <description>Enable SMTP submission</description>
+  <port protocol="tcp" port="587"/>
+</service>

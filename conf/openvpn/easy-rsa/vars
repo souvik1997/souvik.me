@@ -65,7 +65,7 @@ export KEY_COUNTRY="US"
 export KEY_PROVINCE="NY"
 export KEY_CITY="New York"
 export KEY_ORG="Org"
-export KEY_EMAIL="souvik@centos7.souvik.me"
+export KEY_EMAIL="souvik@souvik.me"
 export KEY_OU="MyOrganizationalUnit"
 
 # X509 Subject Field
@@ -77,4 +77,4 @@ export KEY_NAME="server"
 
 # If you'd like to sign all keys with the same Common Name, uncomment the KEY_CN export below
 # You will also need to make sure your OpenVPN server config has the duplicate-cn option set
-# export KEY_CN="centos7.souvik.me"
+# export KEY_CN="souvik.me"

@@ -1,1 +1,1 @@
-opendkim-genkey -d centos7.souvik.me -s mail
+opendkim-genkey -d souvik.me -s mail

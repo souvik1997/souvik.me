@@ -6,7 +6,7 @@
 cache-size=1000
 
 # Specify some default clone prefixes
-clone-prefix=https://centos7.souvik.me/cgit
+clone-prefix=https://souvik.me/cgit
 
 # Specify the css url
 css=/cgit-data/cgit.css

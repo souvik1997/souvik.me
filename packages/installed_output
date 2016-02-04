@@ -5,8 +5,10 @@ cloud-init
 epel-release
 git
 haveged
+mariadb-server
 nano
 wget
+ncurses-devel
 openvpn
 easy-rsa
 sslh
@@ -26,7 +28,6 @@ php-pear-MDB2-Driver-mysqli
 php-fpm
 ant
 cgit
-emacs
 fail2ban
 fcgi-devel
 highlight

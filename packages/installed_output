@@ -5,6 +5,7 @@ cloud-init
 epel-release
 git
 haveged
+ntp
 nano
 wget
 ncurses-devel

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>ZNC</short>
+  <description>ZNC IRC bouncer</description>
+  <port protocol="tcp" port="55331"/>
+</service>

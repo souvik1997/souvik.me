@@ -1,0 +1,2 @@
+For ZNC:
+cat souvik_me.key souvik_me.crt souvik_me_dhparam.pem >> souvik_me_combined.pem

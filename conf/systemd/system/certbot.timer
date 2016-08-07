@@ -1,0 +1,14 @@
+[Unit]
+Description=Daily Let's Encrypt Renewal
+ExecStartPost=/bin/systemctl reload nginx.service
+ExecStartPost=/bin/systemctl reload postfix.service
+ExecStartPost=/bin/systemctl reload dovecot.service
+ExecStartPost=/bin/sh -c "cat /etc/letsencrypt/live/souvik.me/{privkey,cert,chain}.pem > /souvik.me/ssl/znc.pem && /bin/systemctl restart znc.service"
+
+[Timer]
+OnCalendar=weekly
+RandomizedDelaySec=1day
+Persistent=true
+
+[Install]
+WantedBy=timers.target

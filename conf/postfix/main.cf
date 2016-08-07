@@ -679,8 +679,8 @@ sample_directory = /usr/share/doc/postfix-2.10.1/samples
 #
 readme_directory = /usr/share/doc/postfix-2.10.1/README_FILES
 
-smtpd_tls_cert_file = /souvik.me/ssl/souvik_me.crt
-smtpd_tls_key_file = /souvik.me/ssl/souvik_me.key
+smtpd_tls_cert_file = /etc/letsencrypt/live/souvik.me/cert.pem
+smtpd_tls_key_file = /etc/letsencrypt/live/souvik.me/privkey.pem
 smtpd_use_tls = yes
 
 milter_protocol = 2

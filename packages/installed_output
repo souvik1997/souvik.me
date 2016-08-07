@@ -4,6 +4,7 @@ bind-utils
 cloud-init
 epel-release
 git
+certbot
 haveged
 ntp
 nano

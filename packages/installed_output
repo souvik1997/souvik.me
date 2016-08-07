@@ -42,6 +42,7 @@ nmap
 npm
 opendkim
 opendmarc
+znc
 ----end yum packages----
 ----pip3 packages----
 wheel==0.26.0

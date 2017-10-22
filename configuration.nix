@@ -19,7 +19,11 @@
   # Define on which hard drive you want to install Grub.
   boot.loader.grub.device = "/dev/vda"; # or "nodev" for efi only
 
-  networking.hostName = "souvik.me"; # Define your hostname.
+  networking = {
+    hostName = "souvik.me";
+    useNetworkd = true;
+    # bridges.br0.interfaces = ["ens3"];
+  };
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Select internationalisation properties.

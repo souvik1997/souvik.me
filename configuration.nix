@@ -35,7 +35,7 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
-    wget vim git jekyll nodePackages.bower
+    wget vim git nodePackages.bower
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

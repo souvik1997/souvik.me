@@ -35,7 +35,7 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
-    wget vim git nodePackages.bower
+    wget vim git nodePackages.bower htop
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -92,6 +92,10 @@
     recommendedGzipSettings = true;
     recommendedProxySettings = true;
     virtualHosts = import ./nginx/vhosts.nix;
+  };
+
+  services.netdata = {
+    enable = true;
   };
 
 }

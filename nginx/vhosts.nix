@@ -24,4 +24,12 @@
       proxyPass = "http://localhost:19999";
     };
   };
+
+  "shell.souvik.me" = {
+     forceSSL = true;
+     enableACME = true;
+     locations."/" = {
+       proxyPass = "http://localhost:4200";
+     };
+   };
 }

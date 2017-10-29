@@ -35,7 +35,9 @@
 
   # Set your time zone.
   time.timeZone = "America/New_York";
-
+  system.autoUpgrade = {
+    enable = true;
+  };
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
@@ -99,6 +101,10 @@
   };
 
   services.netdata = {
+    enable = true;
+  };
+
+  services.shellinabox = {
     enable = true;
   };
 
